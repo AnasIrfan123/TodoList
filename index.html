@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task-App</title>
+    <link rel="stylesheet" href="style.css">
+
+     <!-- box icons -->
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <p>Task-App</p>
+        </div>
+
+        <div class="fieldBtn">
+
+            <input type="text" placeholder="Enter Any Task" id="inp">
+            <button onclick="addItem()" id="adBtn" class="addBtn">AddItem </button>
+    
+            <button onclick="updateItem()" class="hide" id="update">UpdateItem </button>
+    
+            <button onclick="deleteAll()" class="DeltAll">DeleteAll </button>
+            
+        </div>
+
+
+        <!-- --------------------- LIST   &   ERROR   MSG ---------------------- -->
+
+        <p id="err-messg" class="err-msg"></p> <!-- err mesg -->
+
+        <div class="list-container">
+
+            <ul id="list" class="List">
+                <li> </li>
+            </ul>
+
+        </div>
+
+      
+    </div>
+    <!-- type="module" -->
+    <script src="./app.js"></script>
+</body>
+</html>
